@@ -30,7 +30,7 @@ string FCFS::exec(string command) {
    string result = "";
 
    // Open pipe to file
-   FILE* pipe = _popen(command.c_str(), "r");
+   FILE* pipe = popen(command.c_str(), "r");
    if (!pipe) {
       return "popen failed!";
    }
@@ -43,6 +43,6 @@ string FCFS::exec(string command) {
          result += buffer;
    }
 
-   _pclose(pipe);
+   pclose(pipe);
    return result;
 }

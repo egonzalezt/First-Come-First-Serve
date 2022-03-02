@@ -10,29 +10,6 @@
 using namespace std;
 using namespace std::chrono;
 
-
-string exec(string command) {
-   char buffer[128];
-   string result = "";
-
-   // Open pipe to file
-   FILE* pipe = _popen(command.c_str(), "r");
-   if (!pipe) {
-      return "popen failed!";
-   }
-
-   // read till end of process:
-   while (!feof(pipe)) {
-
-      // use buffer to read and add to result
-      if (fgets(buffer, 128, pipe) != NULL)
-         result += buffer;
-   }
-
-   _pclose(pipe);
-   return result;
-}
-
 int main(int argc, char *argv[]){
     //string ls = argv[1];
     
@@ -50,7 +27,6 @@ int main(int argc, char *argv[]){
 
     commandList.close();
 
-    //cout<<test->exec(test->getCMD())<<endl;
     auto start = high_resolution_clock::now();
     while (!processes.empty()) {
         FCFS process = processes.front(); 
@@ -58,7 +34,7 @@ int main(int argc, char *argv[]){
 
         cout<<"Running process id "<<process.getPid()<<endl;
 
-        cout<<exec(command)<<endl;
+        process.exec(command);
 
         cout<<"Process id "<<process.getPid()<<" ended"<<endl;
         auto current = high_resolution_clock::now();
