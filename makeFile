@@ -1,0 +1,5 @@
+CC = g++
+CFLAGS = -o FCFS
+
+main: main.cpp FCFS.cpp
+	$(CC) $(CFLAGS) main.cpp FCFS.cpp

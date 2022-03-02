@@ -1,0 +1,5 @@
+dir
+bubbleSort.exe
+mergeSort.exe
+mkdir itworks
+python -c "print([x for x in range(1000)])"
