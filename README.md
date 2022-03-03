@@ -41,10 +41,10 @@ If you are working on Linux or OSX you need to compile the required files to run
 
 And in the commands.txt file put this commands
 
-ls
-./bubbleSort
-./mergeSort
-mkdir itworks
+* ls
+* ./bubbleSort
+* ./mergeSort
+* mkdir itworks
 
 If you are working on Windows compile the files and run it
 
