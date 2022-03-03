@@ -8,6 +8,14 @@ First come first serve (FCFS) scheduling algorithm simply schedules the jobs acc
 
 FCFS use a queue to push the process and give resources to the first process in the queue than when the first process is finished it starts the next process and so forth, for that reason we define a set of process and add in a queue to illustrate how First come First serve works.
 
+### Problems with this Algorithm
+
+* The scheduling method is non-preemptive, the process will run to the completion.
+
+* Due to the non-preemptive nature of the algorithm, the problem of starvation may occur.
+
+* Although it is easy to implement, however, it is poor in performance since the average waiting time is higher as compared to other scheduling algorithms.
+
 ## Try it
 
 ### Prerequisites
@@ -55,5 +63,3 @@ If you are working on Windows compile the files and run it
 ```
 
 To run it just put on the terminal ./FCFS
-
- 
