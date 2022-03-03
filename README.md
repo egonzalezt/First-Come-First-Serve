@@ -29,7 +29,7 @@ To see how this program works install C++ on your computer using GCC compiler
 * Windows
   [Follow instructions provided by Visual Studio Code Team](https://code.visualstudio.com/docs/cpp/config-mingw)
   
-##Usage 
+## Usage 
  
 If you are working on Linux or OSX you need to compile the required files to run the program.
  
