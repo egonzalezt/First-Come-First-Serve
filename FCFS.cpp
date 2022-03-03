@@ -25,6 +25,10 @@ string FCFS::getCMD(){
     return command;
 }
 
+/*
+* Recuperado de
+* https://stackoverflow.com/questions/478898/how-do-i-execute-a-command-and-get-the-output-of-the-command-within-c-using-po
+*/
 string FCFS::exec(string command) {
    char buffer[128];
    string result = "";
