@@ -4,6 +4,10 @@
 
 First come first serve (FCFS) scheduling algorithm simply schedules the jobs according to their arrival time. The job which comes first in the ready queue will get the CPU first. This algorithm is a Non-preemptive Scheduling the main reason is because it not interrupt a process running CPU in the middle of the execution. Instead, it waits till the process completes its CPU burst time, and then it can allocate the CPU to another process. 
 
+### Slides
+
+[FCFS Slides](https://www.canva.com/design/DAE5xY1r5FE/yJAqrkg2T3O6vFcGP5yXbw/view?utm_content=DAE5xY1r5FE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## How we implemented
 
 FCFS use a queue to push the process and give resources to the first process in the queue than when the first process is finished it starts the next process and so forth, for that reason we define a set of process and add in a queue to illustrate how First come First serve works.
